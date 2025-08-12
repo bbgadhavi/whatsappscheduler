@@ -1,0 +1,29 @@
+{
+  "short_name": "MsgScheduler",
+  "name": "Android Message Scheduler",
+  "description": "An Android-style application to help you schedule and send personalized messages. Add contacts manually or import them from your device, then send immediately or schedule for later using a 'tap-to-send' flow.",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#6200EE",
+  "background_color": "#F7F7F7"
+}

@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Theme */
+  --color-primary: #6200EE;
+  --color-primary-dark: #3700B3;
+  --color-secondary: #03DAC6;
+  --color-background: #F7F7F7;
+  --color-surface: #FFFFFF;
+  --color-on-primary: #FFFFFF;
+  --color-on-surface: #000000;
+  --color-text-primary: #212121;
+  --color-text-secondary: #757575;
+  --color-border: #E0E0E0;
+
+  /* Dark Theme */
+  --color-primary-dark-theme: #BB86FC;
+  --color-primary-dark-dark-theme: #A752F8;
+  --color-secondary-dark-theme: #03DAC6;
+  --color-background-dark: #121212;
+  --color-surface-dark: #1E1E1E;
+  --color-on-primary-dark: #000000;
+  --color-on-surface-dark: #FFFFFF;
+  --color-text-primary-dark: #F5F5F5;
+  --color-text-secondary-dark: #BDBDBD;
+  --color-border-dark: #2f2f2f;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .bg-primary { background-color: var(--color-primary); }
+  .bg-primary-dark { background-color: var(--color-primary-dark); }
+  .bg-secondary { background-color: var(--color-secondary); }
+  .bg-app-background { background-color: var(--color-background); }
+  .bg-surface { background-color: var(--color-surface); }
+  .text-on-primary { color: var(--color-on-primary); }
+  .text-on-surface { color: var(--color-on-surface); }
+  .text-primary { color: var(--color-primary); }
+  .text-text-primary { color: var(--color-text-primary); }
+  .text-text-secondary { color: var(--color-text-secondary); }
+  .border-border { border-color: var(--color-border); }
+  .focus\\:border-primary:focus { border-color: var(--color-primary); }
+
+
+  .dark .bg-primary { background-color: var(--color-primary-dark-theme); }
+  .dark .bg-primary-dark { background-color: var(--color-primary-dark-dark-theme); }
+  .dark .bg-secondary { background-color: var(--color-secondary-dark-theme); }
+  .dark .bg-app-background-dark { background-color: var(--color-background-dark); }
+  .dark .bg-surface-dark { background-color: var(--color-surface-dark); }
+  .dark .text-on-primary { color: var(--color-on-primary-dark); }
+  .dark .text-on-surface { color: var(--color-on-surface-dark); }
+  .dark .text-primary { color: var(--color-primary-dark-theme); }
+  .dark .text-text-primary-dark { color: var(--color-text-primary-dark); }
+  .dark .text-text-secondary-dark { color: var(--color-text-secondary-dark); }
+  .dark .border-border-dark { border-color: var(--color-border-dark); }
+  .dark .focus\\:border-primary:focus { border-color: var(--color-primary-dark-theme); }
+
+}
+
+@layer components {
+    .select-input {
+        @apply block w-full h-[50px] px-3 text-sm text-text-primary bg-black/5 dark:bg-white/5 rounded-t-md border-b-2 border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-primary dark:text-text-primary-dark;
+    }
+}
